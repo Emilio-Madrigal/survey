@@ -11,24 +11,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-Button siguiente;
+public class Enviar_datos extends AppCompatActivity {
+Button finalizar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         EdgeToEdge.enable (this);
-        setContentView (R.layout.activity_main);
+        setContentView (R.layout.activity_enviar_datos);
 
-        siguiente=findViewById (R.id.siguiente);
+        finalizar =findViewById (R.id.finalizar);
 
-        siguiente.setOnClickListener (new View.OnClickListener () {
+        finalizar.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent (MainActivity.this,preguntas.class );
+                Intent intent = new Intent (Enviar_datos.this,MainActivity.class );
                 startActivity (intent);
             }
         });
     }
-
-
 }

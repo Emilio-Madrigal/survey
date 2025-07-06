@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">survey</string>
+
+    <string name="bienvenida">encuesta de control de calidad del producto</string>
+    <string name="despedida">gracias por contestar ya puedes finalizar</string>
+
+    <string name="pregunta1">pregunta1</string>
+    <string name="pregunta2">pregunta2</string>
+    <string name="pregunta3">pregunta3</string>
+    <string name="pregunta4">pregunta4</string>
+    <string name="pregunta5">pregunta5</string>
 </resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCentro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E6363"
+            app:cardCornerRadius="30dp"
+            android:elevation="8dp"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:gravity="center">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/pregunta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bienvenido"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Fila de botones 1 a 5 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Botón 1 -->
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/circulo"
+                        android:backgroundTint="@color/gray"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/boton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <!-- Botón 2 -->
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/circulo"
+                        android:backgroundTint="@color/gray"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/boton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <!-- Botón 3 -->
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/circulo"
+                        android:backgroundTint="@color/gray"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/boton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <!-- Botón 4 -->
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/circulo"
+                        android:backgroundTint="@color/gray"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/boton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <!-- Botón 5 -->
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/circulo"
+                        android:backgroundTint="@color/gray"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/boton5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

@@ -26,6 +26,7 @@ Button siguiente;
             public void onClick(View view) {
                 Intent intent = new Intent (MainActivity.this,preguntas.class );
                 startActivity (intent);
+
             }
         });
     }

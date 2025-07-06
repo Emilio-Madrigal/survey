@@ -26,6 +26,7 @@ Button finalizar;
             public void onClick(View view) {
                 Intent intent = new Intent (Enviar_datos.this,MainActivity.class );
                 startActivity (intent);
+                finish ();
             }
         });
     }

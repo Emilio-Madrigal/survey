@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 
 public class preguntas extends AppCompatActivity {
-Button preg1,preg2,preg3,preg4,preg5;
+    TextView preg1,preg2,preg3,preg4,preg5;
 TextView preguntas;
 
 String[] preguntitas={
@@ -69,6 +69,7 @@ String[] preguntitas={
 
             Intent intent = new Intent (com.example.survey.preguntas.this,Enviar_datos.class);
             startActivity (intent);
+            finish ();
 
             // Aquí puedes cambiar de pantalla o guardar datos
         }

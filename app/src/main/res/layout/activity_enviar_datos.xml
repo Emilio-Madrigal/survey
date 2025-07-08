@@ -6,43 +6,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
+    android:backgroundTint="@color/Fondo"
     android:background="#FFFFFF">
 
-    <!-- Espacio central con contenido centrado -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <androidx.cardview.widget.CardView
-
             android:id="@+id/cardCentro"
             android:layout_width="500dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:backgroundTint="#6E6363"
+            android:backgroundTint="@color/Contenedor"
             app:cardCornerRadius="30dp">
 
             <TextView
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
+                android:gravity="center"
                 android:text="@string/despedida"
-                android:textColor="@color/white"
+                android:textColor="@color/texto"
                 android:textSize="32sp" />
         </androidx.cardview.widget.CardView>
-
     </RelativeLayout>
 
-    <!-- Botón "Siguiente" fijo abajo -->
     <RelativeLayout
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp">
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSiguiente"
@@ -53,17 +50,16 @@
             android:elevation="8dp">
 
             <Button
-                android:backgroundTint="#6E6363"
                 android:id="@+id/finalizar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/boton"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Finalizar"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
         </androidx.cardview.widget.CardView>
-
     </RelativeLayout>
 
 </LinearLayout>

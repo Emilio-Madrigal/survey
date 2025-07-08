@@ -3,4 +3,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#818181</color>
+
+    <color name="Muy_malo">#FF4C4C</color>
+    <color name="Malo">#FF9900</color>
+    <color name="Meh">#FFEB3B</color>
+    <color name="Bueno">#8BC34A</color>
+    <color name="Muy_bueno">#4CAF50</color>
+
+    <color name="Fondo">#EFE6DD</color>
+    <color name="Contenedor">#D9CFC2</color>
+    <color name="texto">#4E4B46</color>
+    <color name="boton">#A68A64</color>
 </resources>

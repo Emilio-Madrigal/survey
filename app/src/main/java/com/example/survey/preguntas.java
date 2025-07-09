@@ -72,6 +72,12 @@ public class preguntas extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Gracias por responder", Toast.LENGTH_SHORT).show();
 
+            R1.setEnabled(false);
+            R2.setEnabled(false);
+            R3.setEnabled(false);
+            R4.setEnabled(false);
+            R5.setEnabled(false);
+
             JSONArray arrayRespuestas = new JSONArray();
             for (String pregunta : preguntitas) {
                 arrayRespuestas.put(respuestas.get(pregunta));

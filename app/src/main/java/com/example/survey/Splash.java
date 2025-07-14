@@ -29,7 +29,14 @@ public class Splash extends AppCompatActivity {
 
     private void validarAcceso() {
         String clave = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-        String url = "https://script.google.com/macros/s/AKfycbwq1c9VJ1NOy8Jt4IaIn4yLrqQZfdaIBw9xnaczczGaLUtgU_fPOYUqWgiFZpX7A3ejxg/exec?clave=" + clave;
+        String fabricante = android.os.Build.MANUFACTURER;
+        String modelo = android.os.Build.MODEL;
+        String nombre = android.os.Build.DEVICE;
+        String version = android.os.Build.VERSION.RELEASE;
+
+        String descripcion = fabricante + " " + modelo + " (" + nombre + ")";
+        String url = "https://script.google.com/macros/s/AKfycbxf_VWkj1gdooJ4KcrxALk9UMwZKKvnBXHod3B4vSiTmq-QvM0d7WEt6IDq5CEm2MACZA/exec" +
+                "?clave=" + clave + "&dispositivo=" + descripcion.replace(" ", "%20") + "&version=" + version;
 
         RequestQueue queue = Volley.newRequestQueue(this);
 
